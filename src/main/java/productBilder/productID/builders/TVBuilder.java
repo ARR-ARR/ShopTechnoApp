@@ -13,16 +13,11 @@ public class TVBuilder implements BuilderProduct {
     @Override
     public List<Product> createProduct() {
 
-        Tv tvSamsung = new Tv("Телевизор", "Samsung", 14999, "80cm, Черный, LED",
-                1121);
-        Tv tvCandy = new Tv("Телевизор", "Candy", 15999, "81cm, Белый, LED",
-                1122);
-        Tv tvBbk = new Tv("Телевизор", "BBK", 21999, "109cm, Черный, LED",
-                1123);
-        Tv tvPhilips = new Tv("Телевизор", "Philips", 23999, "80cm, Черный, LED",
-                1124);
-        Tv tvSony = new Tv("Телевизор", "Sony", 33999, "109cm, Черный, LED",
-                1125);
+        Tv tvSamsung = new Tv("Телевизор", "Samsung", 14999.00d, "80cm, Черный, LED");
+        Tv tvCandy = new Tv("Телевизор", "Candy", 15999.00d, "81cm, Белый, LED");
+        Tv tvBbk = new Tv("Телевизор", "BBK", 21999.00d, "109cm, Черный, LED");
+        Tv tvPhilips = new Tv("Телевизор", "Philips", 23999.00d, "80cm, Черный, LED");
+        Tv tvSony = new Tv("Телевизор", "Sony", 33999.00d, "109cm, Черный, LED");
 
         tvList.add(tvSamsung);
         tvList.add(tvCandy);

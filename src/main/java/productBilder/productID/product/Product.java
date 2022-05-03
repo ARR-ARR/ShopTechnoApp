@@ -3,17 +3,15 @@ package productBilder.productID.product;
 public abstract class Product {
     private String nameProduct;
     private String brand;
-    private int price;
+    private double price;
     private String description;
-    private int article;
-    private int quantity;
 
-    public Product(String nameProduct, String brand, int price, String description,int article) {
+    public Product(String nameProduct, String brand, double price, String description) {
         this.nameProduct = nameProduct;
         this.brand = brand;
         this.price = price;
         this.description = description;
-        this.article = article;
+
 
     }
     public Product(){
@@ -38,11 +36,11 @@ public abstract class Product {
         this.brand = brand;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -54,21 +52,12 @@ public abstract class Product {
         this.description = description;
         return description;
     }
-
-    public int getArticle() {
-        return article;
-    }
-
-    public void setArticle(int article) {
-        this.article = article;
-    }
-
-    @Override
+        @Override
     public String toString() {
         return
                 "nameProduct/" + nameProduct +
                         " brand/" + brand +
                         " price/" + price +
-                        " description/" + description + " article/" + article + "\n";
+                        " description/" + description + "\n";
     }
 }
