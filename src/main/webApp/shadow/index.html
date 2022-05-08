@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ShopCenter</title>
+</head>
+<body>
+
+<h1 style="font-size:75px;">Добро пожаловать в ShopCenter!</h1>
+<div>
+    <form action="/ShopCenter/productStock" method="get">
+        <label for="nameProduct">Введите категорию продукта:</label><br>
+        <input type="text" id="nameProduct" name="nameProduct"><br>
+        <br>
+        <input type="submit" value="Поиск">
+    </form>
+</div>
+<div>
+    <p><a href="./productList?nameProduct=Ноутбук">Ноутбуки</a></p>
+    <p><a href="./productList?nameProduct=Телефон">Смартфоны</a></p>
+    <p><a href="./productList?nameProduct=Телевизор">Телевизоры</a></p>
+</div>
+<br>
+<div>
+    <a href="./viewBasket">Корзина</a>
+</div>
+<div>
+    <h2>Если Вы являетесь поставщиком и хотите добавить товар, воспользуйтесь специальной формой:</h2>
+    <a href="./ProductAdd.html">Форма добавления товара</a>
+</div>
+
+</body>
+</html>
